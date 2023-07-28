@@ -78,7 +78,7 @@ char	*get_next_line(int fd)
 	char		*buffer;
 	static char	*stash[1024];
 
-	if (fd < 0 || BUFFER_SIZE <= 0 || fd > 128)
+	if (fd < 0 || BUFFER_SIZE <= 0 || fd > 1024)
 		return (NULL);
 	buffer = (char *)malloc(sizeof(char) * (BUFFER_SIZE + 1));
 	if (!buffer)
