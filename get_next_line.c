@@ -10,7 +10,7 @@ char	*ft_getbefore(char *stash)
 		return (NULL);
 	while (stash[i] && stash[i] != '\n')
 		i++;
-	line = (char *)malloc(sizeof(char) * (i + 2));
+	line = (char *)malloc(sizeof(char) * (i + 1));
 	if (!line)
 		return (NULL);
 	i = 0;
